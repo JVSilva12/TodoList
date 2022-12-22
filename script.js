@@ -86,4 +86,5 @@ function addTasksSave() {
     }
     console.log(listTask);
 }
+
 addTasksSave();

@@ -6,21 +6,6 @@
 }
 
 :root{
-
-    --font-Size: 18px;
-    --color-light: #FAFAFA;
-
-    /* PRIMARY */
-    --bright-Blue: #3a7bfd;
-    --check-Background: linear-gradient #57ddff to #c058f3;
-
-    /* LIGHT THEME */
-    --very-Light-Gray: #fafafa;
-    --Very-Light-Grayish-Blue: #e4e5f1;
-    --light-Grayish-Blue: #d2d3db;
-    --dark-Grayis-Blue: #9394a5;
-    --very-Dark-Grayish-Blue: #484b6a;
-
     /* DARK THEME */
     --very-Dark-Blue: #161722;
     --very-Dark-Desaturated-Blue: #25273c;
