@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+:root{
+
+    --font-Size: 18px;
+    --color-light: #FAFAFA;
+
+    /* PRIMARY */
+    --bright-Blue: #3a7bfd;
+    --check-Background: linear-gradient #57ddff to #c058f3;
+
+    /* LIGHT THEME */
+    --very-Light-Gray: #fafafa;
+    --Very-Light-Grayish-Blue: #e4e5f1;
+    --light-Grayish-Blue: #d2d3db;
+    --dark-Grayis-Blue: #9394a5;
+    --very-Dark-Grayish-Blue: #484b6a;
+
+    /* DARK THEME */
+    --very-Dark-Blue: #161722;
+    --very-Dark-Desaturated-Blue: #25273c;
+    --light-Grayish-Blue: #cacde8;
+    --light-Grayish-Blue-hover: #e4e5f1;
+    --dark-Grayish-Blue: #777a92;
+    --very-Dark-Grayish-Blue: #4d5066;
+    --very-Dark-Grayish-Blue: #393a4c;
+}
+
+body{
+    background: var(--very-Dark-Blue);
+    width: 100%;
+    height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+main{
+    width: 40%;
+}
+
+.container{
+    margin-top: 10%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    background: var(--very-Dark-Grayish-Blue);
+}
+
+.container h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.container .containerAddTask{
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container .btnAddTask{
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 20px;
+    background-image: linear-gradient(90deg, #2cd9ff, #7effb2);
+    color: var(--very-Dark-Grayish-Blue);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    opacity: .8;
+    transition: .3s ease;
+    margin-right: 20px;
+}
+
+.container .btnAddTask:hover{
+    opacity: 1;
+}
+
+
+.containerAddTask .inputBox{
+    position: relative;
+    width: 350px;
+}
+
+.containerAddTask .inputBox input{
+    position: relative;
+    padding: 8px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--very-Dark-Grayish-Blue);
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+
+.containerAddTask .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.5s;
+    color: #fff;
+    letter-spacing: 0.05em;
+}
+
+.containerAddTask .inputBox input:valid ~ span, .containerAddTask .inputBox input:focus ~span{
+    font-size: 0.85em;
+    transform: translateY(-32px);
+}
+
+
+.containerAddTask .inputBox i{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #2cd9ff, #7effb2);
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.containerAddTask .inputBox input:valid ~ i, .containerAddTask .inputBox input:focus ~ i{
+    height: 100%;
+}
+
+/* Tarefas existentes */
+.tasks{
+    list-style: none;
+    padding: 10px;
+}
+
+.tasks li{
+    margin: 20px 0;
+}
