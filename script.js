@@ -68,7 +68,7 @@ function saveTasks() {
 
     for (let task of liTasks) {
         let taskText = task.innerText;
-        taskText = taskText.replace('Apagar', '').trim();
+        taskText = taskText.replace('Delete', '').trim();
         listTask.push(taskText);
     }
 
